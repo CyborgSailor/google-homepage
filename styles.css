@@ -22,17 +22,17 @@ body {
     font-size: 14px;
 }
 
-nav ul {
+.navBar ul {
     margin: 0 15px;   
 }
 
-nav ul li{
+.navBar ul li{
     font-size: 14px;
     display: inline;
     margin-left: 10px; 
 }
 
-nav ul li:hover{
+.navBar ul li:hover{
     text-decoration: underline;
     cursor: pointer;
 }
@@ -129,9 +129,32 @@ div .searchBtn button:hover {
     border: 1px solid #dfdfdf;
     box-shadow: 0px 1px 1px #dfdfdf;
 }
+
+/* Footer positiioning/Styles */
+
+footer {
+    background: #f2f2f2;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    text-decoration: none; 
+    color: rgba(0, 0, 0, .54);
+} 
+
 /* Not sure how to make it respond smoothly so I added this media query */
 @media screen and (max-width:607px){
     .input_border {
         width: 440px;
+    }
+}
+
+@media screen and (max-width:520px){
+    footer .navBar {
+        flex-direction: column;
+        padding: 20px 0;
     }
 }
